@@ -6,11 +6,7 @@ public class CollapsibleIfStatements {
 
 	public void collapse() {
 		File file = new File(".");
-		if (file != null) {
-			if (file.isFile() || file.isDirectory()) {
-				/* ... */
-			}
-		}
+		if (file != null && (file.isFile() || file.isDirectory())) {}
 		System.out.println("Collapse!");
 	}
 }
