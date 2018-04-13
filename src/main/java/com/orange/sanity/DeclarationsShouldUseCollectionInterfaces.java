@@ -4,10 +4,11 @@ import java.util.HashSet;
 
 import org.apache.commons.collections4.CollectionUtils;
 
+import java.util.Set;
 public class DeclarationsShouldUseCollectionInterfaces {
 
 	// Noncompliant - "employees" should have type "Set" rather than "HashSet"
-	private HashSet<String> employees = new HashSet<String>();
+	private 	Set<String> employees = new HashSet<String>();
 
 	// Noncompliant
 	public static HashSet<String> getEmployees() {
@@ -18,7 +19,7 @@ public class DeclarationsShouldUseCollectionInterfaces {
 		{
 
 		}
-		System.out.println((CollectionUtils.isEmpty(getEmployees())));
+		System.out.println();
 
 	}
 }
