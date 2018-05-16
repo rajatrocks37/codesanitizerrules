@@ -18,7 +18,7 @@ public class DeclarationsShouldUseCollectionInterfaces {
 		{
 
 		}
-		System.out.println((CollectionUtils.isEmpty(getEmployees())));
+		System.out.println();
 
 	}
 }
